@@ -1,9 +1,4 @@
-const free = () => new Promise((done) => setTimeout(done, 0));
-
 const defFn = ((x, y) => {
-	if (Math.sqrt((x - 0.5)**2 + (y - 0.5)**2) > 0.5) {
-		return '#222';
-	}
 	const r = Math.min(255, Math.max(0, x*255|0));
 	const g = Math.min(255, Math.max(0, y*255|0));
 	return `rgb(${r}, ${g}, 255)`;
